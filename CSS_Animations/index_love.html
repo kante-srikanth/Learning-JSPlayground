@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #fff;
+        position: static;
+        overflow: hidden;
+      }
+
+      @keyframes move {
+        0% {
+          top: 110%;
+        }
+        10% {
+          top: 90%;
+        }
+        20% {
+          top: 80%;
+        }
+        30% {
+          top: 70%;
+        }
+        40% {
+          top: 60%;
+        }
+        50% {
+          top: 50%;
+        }
+        60% {
+          top: 40%;
+        }
+        70% {
+          top: 30%;
+        }
+        80% {
+          top: 20%;
+        }
+        90% {
+          top: 10%;
+        }
+        100% {
+          top: -10%;
+        }
+      }
+      .dot {
+        font-size: 40px;
+        color: red;
+        height: 40px;
+        width: 50px;
+        display: inline-block;
+        background-image: url(img/love.png);
+        opacity: 0.5;
+        position: absolute;
+        top: 120%;
+      }
+      .dot-1 {
+        position: absolute;
+        animation: move 5s linear infinite alternate, rotate 1s linear infinite;
+        left: 10%;
+      }
+      .dot-2 {
+        position: absolute;
+        animation: move 5s linear infinite alternate 2s,
+          rotate 1s linear infinite;
+        left: 20%;
+      }
+      .dot-3 {
+        position: absolute;
+        animation: move 5s linear infinite alternate 3s,
+          rotate 1s linear infinite;
+        left: 30%;
+      }
+      .dot-4 {
+        position: absolute;
+        animation: move 5s linear infinite alternate 1s,
+          rotate 1s linear infinite;
+        left: 40%;
+      }
+      .dot-5 {
+        position: absolute;
+        animation: move 5s linear infinite alternate 5s,
+          rotate 1s linear infinite;
+        left: 50%;
+      }
+      .dot-6 {
+        position: absolute;
+        animation: move 5s linear infinite alternate 3s,
+          rotate 1s linear infinite;
+        left: 60%;
+      }
+      .dot-7 {
+        position: absolute;
+        animation: move 5s linear infinite alternate 2s,
+          rotate 1s linear infinite;
+        left: 70%;
+      }
+      .dot-8 {
+        position: absolute;
+        animation: move 5s linear infinite alternate 3s,
+          rotate 1s linear infinite;
+        left: 80%;
+      }
+      .dot-9 {
+        position: absolute;
+        animation: move 5s linear infinite alternate 5s,
+          rotate 1s linear infinite;
+        left: 90%;
+      }
+      .dot-10 {
+        position: absolute;
+        animation: move 5s linear infinite alternate 1s,
+          rotate 1s linear infinite;
+        left: 100%;
+      }
+      img {
+        width: 700px;
+        height: 700px;
+        margin: 0 auto;
+      }
+      .home_image {
+        background-image: url(img/self_bday.jpeg);
+      }
+      .hello {
+        height: 100vh;
+        width: 100vw;
+        background-color: aquamarine;
+      }
+      .hellos {
+        height: 100vh;
+        width: 100vw;
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="home_image"></div>
+    <div class="hellos">Hello</div>
+    <div style="display: inline;">
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="dot dot-3"></div>
+      <div class="dot dot-4"></div>
+      <div class="dot dot-5"></div>
+      <div class="dot dot-6"></div>
+      <div class="dot dot-7"></div>
+      <div class="dot dot-8"></div>
+      <div class="dot dot-9"></div>
+      <div class="dot dot-10"></div>
+    </div>
+    <div class="hello">Hello</div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    h1 {
+      background-color: wheat;
+      padding: 5px;
+    }
+  </style>
+  <body>
+    <h1>Hello, I am heading 1</h1>
+    <div class="shadow-host">
+      <span id="child"></span>
+    </div>
+    <template class="another-heading">
+      <style>
+        h1 {
+          background-color: aqua;
+        }
+      </style>
+      <h1>Hello, I am also heading injected using template</h1>
+    </template>
+    <script>
+      var shadowHost = document.getElementsByClassName("shadow-host");
+      var shadowRoot = shadowHost.createShadowRoot();
+      var shadowChild = document.createElement("span");
+
+      shadowChild.innerHTML = document.getElementsByClassName(
+        "another-heading"
+      ).innerHTML;
+      shadowRoot.appendChild(shadowChild);
+    </script>
+  </body>
+</html>

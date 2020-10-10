@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+path {
+  stroke: #fc0000;
+  fill: #fc0000;
+  stroke-dasharray: 1200;
+  opacity: 10;
+  animation: animate 3s ease forwards;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 1200;
+  }
+  30% {
+    opacity: 10;
+    fill: none;
+    stroke-dashoffset: 1200;
+  }
+  90% {
+    fill: #fc0000;
+  }
+  100% {
+    opacity: 10;
+    fill: #fc0000;
+    stroke-dashoffset: 0;
+  }
+}
